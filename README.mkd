@@ -1,0 +1,27 @@
+# LLM Selection for Business Applications using ELECTRE III
+
+This repository provides a decision-support framework for selecting the most appropriate Large Language Model (LLM) for enterprise use cases using the **ELECTRE III** multi-criteria decision analysis (MCDA) method.
+
+---
+
+## Project Overview
+
+Modern businesses face numerous LLM choices with varying capabilities in reasoning, cost, speed, context size, and multilingual support. This project applies ELECTRE III to systematically compare and rank LLMs based on real performance data, supporting two real-world business scenarios:
+
+- **Case 1:** Customer Support Chatbot
+- **Case 2:** Internal Business Analytics Tool
+
+---
+
+## Methodology
+
+We use the [ELECTRE III outranking method](https://en.wikipedia.org/wiki/ELECTRE) to evaluate LLMs across multiple quantitative criteria:
+
+- **Reasoning (GPQA Score)**  
+- **Cost per 1M tokens**  
+- **Context Window Size**  
+- **Multilingual Accuracy (0-shot MMLU)**  
+- **Speed (Tokens per Minute)**  
+
+Each case defines different importance weights and threshold settings (`q`, `p`, `v`) for these criteria, reflecting the business priorities of each use case.
+
